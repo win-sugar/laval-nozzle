@@ -1,0 +1,23 @@
+probes
+{
+    type probes;
+    name probes;
+    libs (sampling);
+    interpolationScheme     cellPoint;
+    writeControl            timeStep;
+    writeInterval           1000;
+    log                     on;
+    enabled                 true;
+
+    probeLocations
+    (
+        (0.0635   0   0)
+        (0.127    0   0)
+        (0.1905   0   0)
+    );
+
+    fields
+    (
+        p T
+    );
+}
